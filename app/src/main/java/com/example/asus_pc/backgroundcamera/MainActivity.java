@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                     PackageManager.DONT_KILL_APP);
             Toast.makeText(this, "Enabling broadcast receiver", Toast.LENGTH_SHORT).show();
-            //startService(new Intent(this,MyService.class));
+
         }else if(view == stopBut){
             ComponentName receiver = new ComponentName(this, UnlockScreenReceiver.class);
             PackageManager pm = this.getPackageManager();
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
                     PackageManager.DONT_KILL_APP);
             Toast.makeText(this, "Disabling broadcast receiver", Toast.LENGTH_SHORT).show();
-            //stopService(new Intent(this,MyService.class));
+
         }
     }
 

@@ -21,10 +21,6 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".MyService" />
-
-        <activity android:name=".CameraPreview" />
-        <activity android:name=".CameraPg"></activity>
         <receiver android:name=".UnlockScreenReceiver">
         <intent-filter>
             <action android:name="android.intent.action.USER_PRESENT" />

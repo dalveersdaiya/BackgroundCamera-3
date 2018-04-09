@@ -20,7 +20,6 @@ import java.io.IOException;
 
 public class UnlockScreenReceiver extends BroadcastReceiver {
 
-    ShowCamera showCamera;
     Camera camera;
     Context context1;
     @Override
